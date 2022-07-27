@@ -1,0 +1,40 @@
+.dashboard{
+    left: 25px;
+    top: 53px;
+    background: #101317;
+    box-shadow: 2px 3px 42px rgba(0, 0, 0, 0.5);
+    border-radius: 16px;
+    padding: 21px 15px 200px 15px;
+    }
+.userRow{
+    background: #1E262F;
+    border-radius: 10px;
+    margin: 30px 0;
+    padding: 20px 15px;
+}
+.content{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+.date{
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
+}
+.arrow{
+    position: relative;
+    top: 30%;
+}
+.arrow-button{
+    background-color: #000;
+    border-radius: 8px;
+}
+.r-icon{
+    transform: rotate(-45deg);
+}
+
+.bell-icon{
+    background: #36F5C7;
+    border-radius: 8px;
+    color: #000;
+}
