@@ -1,0 +1,57 @@
+[
+    {
+        "userId": 1,
+        "name": "Charvie Sharma",
+        "email": "charviesharma@gmail.com",
+        "steps walked": 2222,
+        "steps target": "4K", 
+        "performedDate": "28 July", 
+        "scheduledDate": "2 Aug", 
+        "calorieIntake": 2222, 
+        "calorieTarget":"2.5K",
+        "proteinConsumed": 45, 
+        "proteinTarget": 70, 
+        "carbConsumed": 30, 
+        "carbTarget": 70, 
+        "fatConsumed": 50, 
+        "fatTarget": 70
+
+    },
+    {
+        "userId": 2,
+        "name": "Charvie Sharma",
+        "email": "charviesharma@gmail.com",
+        "steps walked": 2222,
+        "steps target": "4K", 
+        "performedDate": "28 July", 
+        "scheduledDate": "2 Aug", 
+        "calorieIntake": 2222, 
+        "calorieTarget":"2.5K",
+        "proteinConsumed": 45, 
+        "proteinTarget": 70, 
+        "carbConsumed": 30, 
+        "carbTarget": 70, 
+        "fatConsumed": 50, 
+        "fatTarget": 70
+
+    },
+    {
+        "userId": 3,
+        "name": "Charvie Sharma",
+        "email": "charviesharma@gmail.com",
+        "steps walked": 2222,
+        "steps target": "4K", 
+        "performedDate": "28 July", 
+        "scheduledDate": "2 Aug", 
+        "calorieIntake": 2222, 
+        "calorieTarget":"2.5K",
+        "proteinConsumed": 45, 
+        "proteinTarget": 70, 
+        "carbConsumed": 30, 
+        "carbTarget": 70, 
+        "fatConsumed": 50, 
+        "fatTarget": 70
+
+    }
+    
+]
