@@ -1,3 +1,6 @@
+.fw700{
+    font-weight: 700;
+}
 .dashboard{
     left: 25px;
     top: 53px;
@@ -13,12 +16,12 @@
     padding: 20px 15px;
 }
 .user {
-    position: relative;
     justify-content: center;
     align-items: center;
     text-align: center;
     width:60px;
     height: 60px;
+    padding: 6px;
     border-radius: 50%;
     background-repeat: no-repeat;
     background-position: center center;
@@ -30,11 +33,9 @@
 }
 .Digits{
     font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 }
 .subtitle{
-    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 10px;
@@ -51,18 +52,38 @@
     display: inline-block;
     vertical-align: middle;
 }
+.date h5{
+    font-size: 16px;
+}
 .arrow{
     position: relative;
     top: 30%;
 }
 .arrow-button{
+    height: 80px;
     background-color: #000;
     border-radius: 8px;
 }
 .r-icon{
     transform: rotate(-45deg);
 }
-
+.plus-minus{
+    background-color: #000;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 32px;
+    border-radius: 4px;
+}
+.plus-minus .plus,.minus{
+    display: flex;
+    bottom: 50%;
+    right: 50%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
 .bell-icon{
     background: #36F5C7;
     border-radius: 8px;
