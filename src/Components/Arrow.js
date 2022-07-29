@@ -1,13 +1,20 @@
 import React from 'react';
 import {IoIosArrowForward} from 'react-icons/io'
+import { useNavigate } from 'react-router-dom';
 
-function Arrow(){
+function Arrow(props){
+
+    const navigate = useNavigate();
+    function handleClick(){
+        navigate(props.path)
+    }
+    
     return(
         <>
         <div className='col-3'>
-            <div className='arrow-button mx-auto'>
+            <button className='btn btn-dark arrow-button  mx-auto' onClick={handleClick}>
                 <IoIosArrowForward className='arrow'/>
-            </div>
+            </button>
         </div>
         </>
     )

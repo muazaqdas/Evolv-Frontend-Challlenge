@@ -1,17 +1,20 @@
 import React from 'react';
 import UserData from '../Data/users.json'
+import Arrow from './Arrow';
+
+
 import './styles.css'
 
-import Arrow from './Arrow';
-import CircleBar from './CircleBar';
 
-import {AiOutlinePlus,AiOutlineMinus} from 'react-icons/ai'
+
 
 import {BiUserCheck,BiWalk} from 'react-icons/bi'
 import {TbCalendarTime} from 'react-icons/tb'
 import {FaRegBell,FaDumbbell,FaConciergeBell} from 'react-icons/fa'
 
-import { PieChart } from 'react-minimal-pie-chart';
+import Steps from './Steps';
+// import { Link } from 'react-router-dom';
+import Nutrition from './Nutrition';
 
 
 
@@ -27,8 +30,16 @@ function Dashboard(){
 
                         <div className='col-2 '>{"  "} </div>
                         <div className='col-2   steps'><BiWalk className='' size={25}/> STEPS</div>
-                        <div className='col-2 workout'><FaDumbbell className=' r-icon' size={20}/> WORKOUT</div>
-                        <div className='col-2  mx-3 nutrition'><FaConciergeBell className='' size={20}/> NUTRITION</div>
+                        <div className='col-2 workout'>
+                            
+                                <FaDumbbell className=' r-icon' size={20}/> WORKOUT
+                          
+                        </div>
+                        <div className='col-2  mx-3 nutrition'>
+                           
+                                <FaConciergeBell className='' size={20}/> NUTRITION
+                            
+                        </div>
                         <div className='col-4 blank'>{"  "} </div>
             </nav>
 
@@ -50,16 +61,7 @@ function Dashboard(){
                         </div>
                         {/* ............ */}
                         <div className='col-2'>
-                            <div className='row d-flex justify-content-center align-items-center'>
-                                <CircleBar value={data['steps walked']}  maxValue={4000} digit={data['steps walked']} subtitles={"Walked"}/>
-                                <div className='col-3 justify-content-center align-items-center'>
-
-                                <button className=' btn btn-dark plus-minus'><AiOutlinePlus className='plus' size={14}/></button>
-                                    <h5 className='m-0 p-0 fw700'>{data['steps target']}</h5>
-                                    <p className='m-0 p-0 subtitle'>Target</p>
-                                    <button className='btn btn-dark plus-minus'><AiOutlineMinus className='minus' size={14}/></button>
-                                </div>
-                            </div>
+                            <Steps index={index} value={data["steps walked"]} maxValue={data['steps target']} digit={data["steps walked"]} subtitle1={"Walked"} targetSteps={data['steps target']} subtitle2={"Target"}/>
                         </div>
                         {/* ................ */}
                         <div className='col-2'>
@@ -68,29 +70,12 @@ function Dashboard(){
                                     <h5 className='p-0 m-0 '><BiUserCheck className='p-0 m-0' size={28}/>  {data.performedDate}</h5>
                                     <h5 className='p-0 m-0 '><TbCalendarTime className='p-0 m-0' size={28}/>  {data.scheduledDate}</h5>
                                 </div>
-                                <Arrow />
+                                    <Arrow path={`/${data.userId}/workout`} />
                             </div>
                         </div>
                         {/* ................. */}
                         <div className='col-2'>
-                            <div className='row d-flex justify-content-center align-items-center'>
-                                <div className='col-6'>
-                                <PieChart
-                                    lineWidth={25}
-                                    data={[
-                                        { title: 'Carbs', value: data.carbConsumed, color: '#F5C90F' },
-                                        { title: 'Fat', value: data.fatConsumed, color: '#03C7FC' },
-                                        { title: 'Protein', value: data.proteinConsumed, color: '#F45C84'},
-                                    ]}
-                                    />
-                                </div>
-                                <div className='col-3 m-0 p-0'>
-                                    <h5 className='m-0 p-0 fw700'>{data.calorieTarget}</h5>
-                                    <p className='m-0 p-0 subtitle'>Target</p>
-                                </div>
-                                <Arrow/>
-
-                            </div>
+                            <Nutrition path={`/${data.userId}/nutrition`} carbConsumed={data.carbConsumed} fatConsumed={data.fatConsumed} proteinConsumed={data.proteinConsumed} calorieTarget={data.calorieTarget} />
                         </div>
                         {/* .............. */}
                         <div className=' col-1 justify-conten-center align-items-center'>

@@ -55,10 +55,7 @@
 .date h5{
     font-size: 16px;
 }
-.arrow{
-    position: relative;
-    top: 30%;
-}
+
 .arrow-button{
     height: 80px;
     background-color: #000;
