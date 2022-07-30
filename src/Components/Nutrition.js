@@ -10,7 +10,6 @@ import Tooltip from "./Tooltip/Tooltip";
 function Nutrition(props) {
 
     const [calorie, setValue] = useState(props.calorieTarget);
-    const [isHovering,setHovering] = useState(false);
 
     function handleCLickPlus(){
       setValue((prevValue)=> prevValue+1000);
@@ -19,12 +18,6 @@ function Nutrition(props) {
       setValue((prevValue)=> prevValue-1000);
     }
 
-    function mouseOver(){
-        setHovering(true);
-    }
-    function mouseOut(){
-        setHovering(false);
-    }
 
 
   return (
@@ -39,8 +32,6 @@ function Nutrition(props) {
                     { title: "Fat", value: props.fatConsumed, color: "#03C7FC" },
                     { title: "Protein", value: props.proteinConsumed, color: "#F45C84" },
                 ]}
-                onMouseOver={mouseOver}
-                onMouseOut={mouseOut}
                 />}
                 
                 carbConsumed={props.carbConsumed} 
