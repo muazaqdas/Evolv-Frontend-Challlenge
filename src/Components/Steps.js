@@ -19,25 +19,21 @@ function Steps(props) {
 
     return (
       <div className="row d-flex justify-content-center align-items-center">
-        <div className='circle-bar col-6'>
+        <div className='circle-bar col-5 '>
           <CircularProgressbarWithChildren  value={props.value} maxValue={props.maxValue}>
           <p className='Digits'>{props.digit}</p>
           <p className='subtitle'>{props.subtitle1}</p>
           </CircularProgressbarWithChildren>
-      </div>
-      <div className="col-3 justify-content-center align-items-center">
-
-        <button className=" btn btn-dark plus-minus" onClick={handleCLickPlus}>
-          <AiOutlinePlus className="plus" size={14} />
-        </button>
-
-        <h5 className="m-0 p-0 fw700">{targetValue}</h5>
-        <p className="m-0 p-0 subtitle">{props.subtitle2}</p>
-
-        <button className="btn btn-dark plus-minus" onClick={handleCLickMinus}>
-          <AiOutlineMinus className="minus" size={14} />
-        </button>
-
+        </div>
+        <div className="col-6 justify-content-center align-items-center text-center">
+          <button className=" btn btn-dark plus-minus" onClick={handleCLickPlus}>
+            <AiOutlinePlus className="plus" size={14} />
+          </button>
+          <h5 className="m-0 p-0 fw700">{`${targetValue/1000}K`}</h5>
+          <p className="m-0 p-0 subtitle">{props.subtitle2}</p>
+          <button className="btn btn-dark plus-minus" onClick={handleCLickMinus}>
+            <AiOutlineMinus className="minus" size={14} />
+          </button>
       </div>
     </div>
   );

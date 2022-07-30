@@ -3,8 +3,8 @@ import React from 'react';
 
 function Workout(){
     return(
-        <div style={{color:"#fff",backgroundColor:"red"}}>
-            this is  Blank 
+        <div style={{color:"#fff"}}>
+            <h1>Workout</h1>
         </div>
     )
 }

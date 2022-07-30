@@ -3,9 +3,9 @@ import React from 'react';
 
 function NutritionPage(){
     return(
-        <div style={{color:"#fff",backgroundColor:"red"}}>
-            this is  Blank 
-        </div>
+        <div style={{color:"#fff"}}>
+        <h1>Nutrition</h1>
+    </div>
     )
 }
 
