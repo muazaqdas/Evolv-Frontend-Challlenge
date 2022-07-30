@@ -45,7 +45,7 @@ function Dashboard(){
                 return(
                     <div key={index} className='userRow row d-flex justify-content-between align-items-center'>
                         {/* ................. */}
-                        <div className='col-lg-3 col-md-6 mb-md-5 col-sm-12'>
+                        <div className='col-lg-3 col-md-6 col-sm-12'>
                             <div className='row d-flex justify-content-center align-items-center'>
                                 <div className='col-3'>
                                     <div className="user">
@@ -58,7 +58,7 @@ function Dashboard(){
                             </div>
                         </div>
                         {/* ............ */}
-                        <div className='col-lg-2 col-md-4 mb-md-5 col-sm-12'>
+                        <div className='col-lg-2 col-md-4 col-sm-12'>
                             <Steps index={index} value={data["steps walked"]} maxValue={data['steps target']} digit={data["steps walked"]} subtitle1={"Walked"} targetSteps={data['steps target']} subtitle2={"Target"}/>
                         </div>
                         {/* ................ */}
