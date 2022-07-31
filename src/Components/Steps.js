@@ -20,7 +20,7 @@ function Steps(props) {
     return (
       <div className="row d-flex justify-content-center align-items-center">
         <div className='circle-bar col-6 '>
-          <CircularProgressbarWithChildren  value={props.value} maxValue={props.maxValue}>
+          <CircularProgressbarWithChildren  value={props.value} maxValue={targetValue}>
           <p className='Digits'>{props.digit}</p>
           <p className='subtitle'>{props.subtitle1}</p>
           </CircularProgressbarWithChildren>
