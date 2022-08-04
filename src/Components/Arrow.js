@@ -13,11 +13,11 @@ function Arrow(props){
     const feedback = props.feedback;
     return(
         <>
-        <div className='col-3'>
+        {/* <div className='col-3'> */}
             <button  className={`btn btn-dark arrow-button  mx-auto ${feedback ? "redColor": ""}`} onClick={handleClick}>
             {(feedback) ? <AiOutlineExclamation/> :<IoIosArrowForward className='arrow'/> }
             </button>
-        </div>
+        {/* </div> */}
         </>
     )
 }

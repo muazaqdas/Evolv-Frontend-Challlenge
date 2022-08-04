@@ -68,7 +68,7 @@ function Dashboard(){
                                     <button className='btn btn-dark '><BiUserCheck className='p-0 m-0' size={28}/>  {data.performedDate}</button>
                                     <button className={`btn btn-dark  ${(data.performedDate===data.scheduledDate) && "redColor"}`}><TbCalendarTime className='p-0 m-0' size={28}/>  {data.scheduledDate}</button>
                                 </div>
-                                <div className='col-3 dateArrow'>
+                                <div className='col-3  dateArrow'>
                                     <Arrow feedback={data.feedback}  path={`/${data.userId}/workout`} />
                                 </div>
                             </div>

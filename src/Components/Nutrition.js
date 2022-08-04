@@ -62,7 +62,9 @@ function Nutrition(props) {
             <AiOutlineMinus className="minus" size={14} />
             </button>
       </div>
+      <div className="col-3">
       <Arrow path={props.path}/>
+      </div>
     </div>
   );
 }
