@@ -37,14 +37,14 @@ This will start the development server and open the app in your default browser 
 
 This project uses the following dependencies:
 
-* Bootstrap: "^5.2.0"
 * React: "^18.2.0"
-* react-circular-progressbar: "^2.1.0"
 * react-dom: "^18.2.0"
 * react-icons: "^4.4.0"
-* react-minimal-pie-chart: "^8.3.0"
 * react-router: "^6.3.0"
 * react-router-dom: "^6.3.0"
+* Bootstrap: "^5.2.0"
+* react-circular-progressbar: "^2.1.0"
+* react-minimal-pie-chart: "^8.3.0"
 
 ## Contributing
 
